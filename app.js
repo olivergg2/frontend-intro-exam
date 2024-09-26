@@ -13,8 +13,10 @@ function saveToLocalstorage() {
 }
 
 function tryParseJSON(string, fallback = null) {
+  if (!string) return fallback
+
   try {
-    return JSON.parse(string) ?? fallback
+    return JSON.parse(string)
   } catch (error) {
     return fallback
   }
