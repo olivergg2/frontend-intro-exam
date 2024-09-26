@@ -40,7 +40,7 @@ main {
   gap: 0.5rem;
   border: 1px solid black;
 
-  height: 20rem;
+  min-height: 15rem;
   max-height: 100%;
 }
 
@@ -53,6 +53,7 @@ button:not(:disabled) {
   flex-direction: row;
   gap: 0.5rem;
   height: 3rem;
+  min-height: 3rem;
 }
 
 #add-todo-text {
