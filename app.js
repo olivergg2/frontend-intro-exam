@@ -63,11 +63,12 @@ function removeTodo(id) {
 }
 
 function createTodo(name) {
-  if (!name) return console.error('Todo must have text content')
+  const actualName = name.trim()
+  if (!actualName) return console.error('Todo must have text content')
 
   // Create todo with random id
   const uuid = crypto.randomUUID()
-  const todoToAdd = { id: uuid, text: name, done: false }
+  const todoToAdd = { id: uuid, text: actualName, done: false }
 
   // Add todo to list of todos
   todos.push(todoToAdd)
