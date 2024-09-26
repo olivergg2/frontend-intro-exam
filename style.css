@@ -40,7 +40,7 @@ main {
   gap: 0.5rem;
   border: 1px solid black;
 
-  min-height: 20rem;
+  height: 20rem;
   max-height: 100%;
 }
 
