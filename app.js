@@ -14,7 +14,7 @@ function saveToLocalstorage() {
 
 function tryParseJSON(string, fallback = null) {
   try {
-    return JSON.parse(string)
+    return JSON.parse(string) ?? fallback
   } catch (error) {
     return fallback
   }
